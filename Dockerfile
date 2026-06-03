@@ -1,5 +1,5 @@
 # ── Common base with runtime deps ──────────────────────────────────────────
-FROM node:22-slim AS base
+FROM node:26-slim AS base
 WORKDIR /app
 
 RUN --mount=type=cache,target=/var/cache/apt,sharing=shared \
